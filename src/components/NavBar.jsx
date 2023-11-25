@@ -14,10 +14,10 @@ function NavBar(props) {
             
                 
             <div className="mb-3 form-check">
-               {props.var}
+               {props.var} 
                </div>
-            <button type="submit" onClick={ ()=>{
-                props.fn(10) }
+            <button type="submit" onClick={  ()=>
+                props.fn(prevState => prevState + 10)
             } className="btn btn-primary">Change to 10</button>
             </form>
             </div>

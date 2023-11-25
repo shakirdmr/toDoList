@@ -1,24 +1,21 @@
-import React, { useState } from 'react'
-import NavBar from './components/NavBar'
-
+import { useRef, useState } from "react"
 
 export default function App() {
 
-
-  const increaseX = ()=>{
-    setX(x+1);
-  }
-  const [x,setX] = useState(0);
-
-       
+  const inputRef = useRef(1);
+  const [items,setItems] = useState( [] );
 
   return (
+
     <div>
-       <NavBar var={x} fn={setX } />
 
-
-       <button type="submit" onClick={  increaseX
-            } className="btn btn-primary">INCREMENT</button>
+     <div className="m-5">
+      <input ref={inputRef}/>
+      <button className="m-5" onClick={ ()=>{ setItems([...items,inputRef.current.value])} }>Submit</button>
+     </div>
+      
+      {items.map( (item,key)=>{ return <h1 key={key}> {item}</h1> })    }
+       
     </div>
   )
 }
