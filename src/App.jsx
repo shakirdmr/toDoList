@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import Todo from "./components/Todo";
 
 export default function App() {
 
@@ -9,13 +10,7 @@ export default function App() {
 
     <div>
 
-     <div className="m-5">
-      <input ref={inputRef}/>
-      <button className="m-5" onClick={ ()=>{ setItems([...items,inputRef.current.value])} }>Submit</button>
-     </div>
-      
-      {items.map( (item,key)=>{ return <h1 key={key}> {item}</h1> })    }
-       
+     <Todo />
     </div>
   )
 }

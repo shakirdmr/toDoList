@@ -1,0 +1,48 @@
+.todoitems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    width:600px;
+    
+    overflow: hidden;
+  ;
+}
+
+.todoitems-container{
+  
+    padding: 5px;
+
+    display: flex;
+    gap:10px;
+    width: 600px;
+    align-items: center;
+}
+
+.todo-cross{
+    cursor: pointer;
+}
+
+.todoitems-text{
+    width: 80%;
+    display: flex;
+    margin: 0 40px 0 20px;
+    font-size: 25px;
+    
+}
+
+.image-tick_cross{
+    cursor: pointer;
+}
+
+
+.line-through{
+    text-decoration: line-through solid 3px white;
+}
+
+@media (max-width:600px)
+{
+    .todoitems-container{
+        width: 90%;
+    }
+}

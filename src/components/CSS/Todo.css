@@ -1,0 +1,93 @@
+.todo{
+    width: 600px;
+    min-height : 732px;
+    border-radius: 20px;
+    background:#332a2a;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 44px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    
+    }
+    
+    .todo-list{
+        
+        width: 600px;
+       
+    }
+    
+    .todo-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #f1f1f1;
+    }
+    .todo-add{
+        border:0;
+        margin-top: 30px;
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: center;
+        align-items: center;
+      
+    }
+    
+    .todo-form{
+        width: 100%;
+        display: flex;
+    }
+    
+    .itemInput{
+     
+        padding: 20px;
+        border-radius: 50px;
+        width: 100%;
+        background-color: #ddd4d4;
+        border:0;
+        font-size: 22px;
+    }
+    
+    .itemInput :focus {
+        background-color: white;
+    }
+    
+    
+    .todo-add-btn{
+        display: flex;
+        border:0;
+        border-radius: 50px;
+        background-color: #09128d;
+        color: white;
+        padding: 20px;
+        margin-left: -80px;
+        cursor: pointer;
+    }
+    
+    
+    
+     @media (max-width:600px){
+        .todo{
+            width: 90%;
+            padding: 0;
+        }
+    
+        /* .todo-add
+        {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+    
+        .todo-list{
+            width: 100%;
+            /* border: 1px solid yellow;
+        } */
+     }
