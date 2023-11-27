@@ -22,7 +22,7 @@ function Todoitems({itemVal,setTodos}) {
             console.log(no+" "+data[i].no);
 
                 if (data[i].no===no) {
-                    console.log("dddddddddd");
+                    
                     if (data[i].display==="") 
                     data[i].display = "line-through";
                     else 

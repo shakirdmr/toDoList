@@ -4,17 +4,13 @@
     justify-content: space-between;
     padding: 16px;
     width:600px;
-    
-    overflow: hidden;
-  ;
 }
 
 .todoitems-container{
   
     padding: 5px;
-
+   
     display: flex;
-    gap:10px;
     width: 600px;
     align-items: center;
 }
